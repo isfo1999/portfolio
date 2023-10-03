@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#background {
+    filter: blur(0); /* Adjust the initial blur amount as needed */
+    transition: filter 0.3s ease-in-out;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    font-size: xx-large;
+    margin-left: 5vw;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+.logo:hover {
+    color: rgb(138, 135, 135);
+    transition: 0.3s;
+}
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5vw;
+    transition: 0.3s;
+}
+.select {
+    border-bottom: 1px solid blue;
+    color: blue;
+    transition: 1s;
+}
+nav > ul > li > a:hover {
+    color: rgb(138, 135, 135);
+    transition: 0.3s;
+}
+nav > ul {
+    list-style: none;
+    display: flex;
+}
+.content {
+    display: flex;
+}
+.texts {
+    margin-top: 40vh;
+    margin-left: 15vw;
+    color: white;
+}
+.hero-image {
+    position: absolute;
+    top: 17vh;
+    right: 5vw;
+    border: black solid 1px;
+    border-radius: 50%;
+}
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+@media (max-width: 768px) {
+    #background-video {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+.about-section {
+    width: 15cm;
+    margin-top: 2cm;
+    margin-left: 15vw;
+    padding: 0;
+}
+.about-text {
+    padding-top: 5cm;
+    user-select: none;
+}
+.about-text {
+    font-size: x-large;
+}
+.blurred-bg {
+    backdrop-filter: blur(2px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+::-webkit-scrollbar {
+    width: 1px; /* Width of the scrollbar */
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  ::-webkit-scrollbar-track:hover {
+    background-color: #000000; /* Color on hover */
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #000000; /* Color of the thumb on hover */
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: #ffffff; /* Color of the scrollbar corner */
+  }
+img {
+   user-select: none;
+}
+.skills {
+    text-align: center;
+    padding: 20px;
+    padding-top: 2cm;
+}
+.skills h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.skills .skill {
+    margin: 10px;
+    display: inline-block;
+}
+.skills .skill img {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+.skills .skill p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #c0b9b9;
+}
+.skills .skill:hover img {
+    transform: scale(1.1);
+}
+.skills {
+    margin-top: 5cm;
+}
+.projects {
+    text-align: center;
+    padding-bottom: 5cm;
+    padding-top: 5cm;
+    margin-bottom: 5cm;
+}
+.contact {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent; /* Transparent background */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5cm;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: transparent; /* Transparent background */
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background: transparent; /* Transparent background */
+    color: #007BFF;
+    border: 1px solid #007BFF; /* Add a border with the same color as the text */
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button:hover {
+    background: rgba(0, 123, 255, 0.1); /* Slight transparent background on hover */
+  }
+  .scroll-down {
+    display: flex;
+    margin-top: 6cm;
+    margin-left: 16cm;
+  }
+  .design1 {
+    height: 200px;
+    margin-top: 1cm;
+    transition: 0.3s;
+  }
+  .design1:hover {
+    height: 250px;
+    transition: 0.3s;
+  }
+  @media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for mobile devices */
+    }
+    .about-text {
+        width: 75vw;
+    }
+    nav {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center; /* Center align links */
+    }
+    .logo {
+        font-size: x-large; /* Adjust logo size for mobile */
+        margin: 20px 0; /* Add some spacing around the logo */
+    }
+    nav > ul > li {
+        margin-left: 5vw;
+    }
+    nav > ul > li > a {
+        margin: 10px 0; /* Add spacing between navigation links */
+        font-size: 15px; /* Adjust font size for navigation links */
+    }
+    .hero-image {
+        visibility: hidden;
+    }
+}
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+        justify-content: space-around; /* Distribute links horizontally */
+        align-items: center;
+    }
+    .logo {
+        font-size: xx-large; /* Adjust logo size for desktop */
+        margin: 0; /* Reset margin for the logo */
+    }
+    nav > ul > li > a {
+        margin: 0 20px; /* Add spacing between navigation links */
+        font-size: 24px; /* Adjust font size for navigation links */
+    }
+    .hero-image {
+        visibility: visible;
+    }
+}
